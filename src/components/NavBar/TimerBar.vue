@@ -22,7 +22,9 @@
         on-demand networking in
       </p>
       <p class="text-3xl sm:text-[50px] font-semibold lg:mr-5">13:52</p>
-
+      <button class="inline-block lg:hidden text-[15px] rounded-full">
+        Open on-demand networking
+      </button>
       <img
         src="../../assets/imgs/info-bubble.png"
         alt=""

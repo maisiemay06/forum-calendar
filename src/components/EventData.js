@@ -5,6 +5,7 @@ export default [
     start: "2022-06-26T06:00:00",
     end: "2022-06-26T07:00:00",
     borderColor: "#9231CE",
+    className: "bookedMeeow",
     extendedProps: {
       category: "bookedMeeow",
     },
@@ -15,6 +16,7 @@ export default [
     start: "2022-06-26T11:00:00",
     end: "2022-06-26T11:45:00",
     borderColor: "#394CED",
+    className: "onDemandMeeow",
     extendedProps: {
       category: "onDemandMeeow",
     },
@@ -25,6 +27,7 @@ export default [
     start: "2022-06-26T13:30:00",
     end: "2022-06-26T14:30:00",
     borderColor: "#00DCDC",
+    className: "createdMeeow",
     extendedProps: {
       category: "createdMeeow",
     },
@@ -35,6 +38,7 @@ export default [
     start: "2022-06-26T17:00:00",
     end: "2022-06-26T19:00:00",
     borderColor: "#00DCDC",
+    className: "createdMeeow",
     extendedProps: {
       category: "createdMeeow",
     },
@@ -44,8 +48,9 @@ export default [
     id: 5,
     title: "Booked Event",
     start: "2022-06-27T12:00:00",
-    end: "2022-06-26T13:00:00",
+    end: "2022-06-27T13:00:00",
     borderColor: "#9231CE",
+    className: "bookedMeeow",
     extendedProps: {
       category: "bookedMeeow",
     },
@@ -56,6 +61,7 @@ export default [
     start: "2022-06-27T13:00:00",
     end: "2022-06-27T13:45:00",
     borderColor: "#394CED",
+    className: "onDemandMeeow",
     extendedProps: {
       category: "onDemandMeeow",
     },
@@ -66,6 +72,7 @@ export default [
     start: "2022-06-27T16:00:00",
     end: "2022-06-27T16:45:00",
     borderColor: "#394CED",
+    className: "onDemandMeeow",
     extendedProps: {
       category: "onDemandMeeow",
     },
@@ -76,6 +83,117 @@ export default [
     start: "2022-06-27T17:00:00",
     end: "2022-06-27T18:00:00",
     borderColor: "#00DCDC",
+    className: "createdMeeow",
+    extendedProps: {
+      category: "createdMeeow",
+    },
+  },
+  {
+    id: 9,
+    title: "Suggested Event",
+    start: "2022-06-28T11:00:00",
+    end: "2022-06-28T12:00:00",
+    borderColor: "#000",
+    className: "suggestedMeeow",
+    extendedProps: {
+      category: "suggestedMeeow",
+    },
+  },
+  {
+    id: 10,
+    title: "Created Event",
+    start: "2022-06-28T14:30:00",
+    end: "2022-06-28T15:15:00",
+    borderColor: "#00DCDC",
+    className: "createdMeeow",
+    extendedProps: {
+      category: "createdMeeow",
+    },
+  },
+  {
+    id: 11,
+    title: "Suggested Event",
+    start: "2022-06-29T12:00:00",
+    end: "2022-06-29T12:45:00",
+    borderColor: "#000",
+    className: "suggestedMeeow",
+    extendedProps: {
+      category: "suggestedMeeow",
+    },
+  },
+  {
+    id: 12,
+    title: "Is AI destroying the design indistry?",
+    start: "2022-06-30T08:00:00",
+    end: "2022-06-30T09:00:00",
+    borderColor: "#9231CE",
+    className: "bookedMeeow",
+    extendedProps: {
+      category: "bookedMeeow",
+    },
+  },
+  {
+    id: 13,
+    title: "On-demand networking",
+    start: "2022-06-30T11:00:00",
+    end: "2022-06-30T11:45:00",
+    borderColor: "#394CED",
+    className: "onDemandMeeow",
+    extendedProps: {
+      category: "onDemandMeeow",
+    },
+  },
+  {
+    id: 14,
+    title: "Created Event",
+    start: "2022-06-30T13:30:00",
+    end: "2022-06-30T14:30:00",
+    borderColor: "#00DCDC",
+    className: "createdMeeow",
+    extendedProps: {
+      category: "createdMeeow",
+    },
+  },
+  {
+    id: 14,
+    title: "Suggested Event",
+    start: "2022-07-01T12:00:00",
+    end: "2022-07-01T12:45:00",
+    borderColor: "#000",
+    className: "suggestedMeeow",
+    extendedProps: {
+      category: "suggestedMeeow",
+    },
+  },
+  {
+    id: 15,
+    title: "Is AI destroying the design indistry?",
+    start: "2022-07-01T10:00:00",
+    end: "2022-07-01T11:00:00",
+    borderColor: "#9231CE",
+    className: "bookedMeeow",
+    extendedProps: {
+      category: "bookedMeeow",
+    },
+  },
+  {
+    id: 16,
+    title: "On-demand networking",
+    start: "2022-07-01T11:00:00",
+    end: "2022-07-01T11:45:00",
+    borderColor: "#394CED",
+    className: "onDemandMeeow",
+    extendedProps: {
+      category: "onDemandMeeow",
+    },
+  },
+  {
+    id: 17,
+    title: "Created Event",
+    start: "2022-07-01T13:30:00",
+    end: "2022-07-01T14:30:00",
+    borderColor: "#00DCDC",
+    className: "createdMeeow",
     extendedProps: {
       category: "createdMeeow",
     },

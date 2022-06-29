@@ -1,5 +1,5 @@
 <template>
-  <div class="px-20 h-full w-full calendar-container">
+  <div class="hidden md:block px-20 h-full w-full calendar-container z-20">
     <FullCalendar :options="options" class="w-full" />
   </div>
 </template>
@@ -32,7 +32,7 @@ export default {
         allDaySlot: false,
         firstDay: 0,
         expandRows: true,
-        height: "70vh",
+        height: "72vh",
         dayHeaderFormat: { weekday: "short", day: "numeric" },
         slotLabelFormat: {
           hour: "numeric",
@@ -122,6 +122,8 @@ table tr td:last-child {
 .fc-timegrid-event {
   border-radius: 4px 0 4px 0 !important;
   font-size: 12px !important;
+  border-width: 0.1rem !important;
+  width: 80%;
 }
 .fc-event-time {
   font-weight: 600 !important;
@@ -149,6 +151,22 @@ table tr td:last-child {
   display: inline-block;
   position: relative;
   top: -1px;
-  left: -1px;
+  left: -2px;
+}
+.createdMeeow .fc-event-main::before {
+  background-color: #00dcdc;
+  border-color: #00dcdc;
+}
+.bookedMeeow .fc-event-main::before {
+  background-color: #9231ce;
+  border-color: #9231ce;
+}
+.onDemandMeeow .fc-event-main::before {
+  background-color: #394ced;
+  border-color: #394ced;
+}
+.suggestedMeeow .fc-event-main::before {
+  background-color: #000;
+  border-color: #000;
 }
 </style>

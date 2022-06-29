@@ -3,6 +3,7 @@
     <main-nav :openModal="openModal"></main-nav>
     <search-bar></search-bar>
     <timer-bar :openModal="openModal"></timer-bar>
+    <mobile-date-picker></mobile-date-picker>
     <modal-template
       v-if="showModal"
       class="z-30"
@@ -19,6 +20,7 @@ import ModalTemplate from "../ModalTemplate.vue";
 import MainNav from "./MainNav.vue";
 import SearchBar from "./SearchBar.vue";
 import TimerBar from "./TimerBar.vue";
+import MobileDatePicker from "./MobileDatePicker.vue";
 
 export default {
   name: "NavBar",
@@ -27,6 +29,7 @@ export default {
     MainNav,
     SearchBar,
     TimerBar,
+    MobileDatePicker,
   },
   data() {
     return {

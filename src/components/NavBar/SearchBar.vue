@@ -13,12 +13,18 @@
       lg:px-20 lg:py-3 lg:h-[80px] lg:drop-shadow-md
     "
   >
-    <!-- Date Picker -->
-    <a href=""><i class="fa-solid fa-chevron-left mr-5"></i></a>
-    <p class="text-[15px] mr-5">January 2022</p>
-    <a href=""><i class="fa-solid fa-chevron-right mr-5"></i></a>
+    <!-- Desktop Date Picker -->
+    <a href=""
+      ><i class="hidden lg:inline-block fa-solid fa-chevron-left mr-5"></i
+    ></a>
+    <p class="hidden lg:inline-block text-[15px] mr-5">January 2022</p>
+    <a href=""
+      ><i class="hidden lg:inline-block fa-solid fa-chevron-right mr-5"></i
+    ></a>
     <button
       class="
+        hidden
+        lg:inline-block
         border border-black
         px-5
         h-7
@@ -32,9 +38,18 @@
       Today
     </button>
 
-    <!-- Help Btns -->
+    <!-- Desktop Help Btns -->
     <button
-      class="bg-meeow-light px-5 h-7 rounded-tl-lg rounded-br-lg mr-5 text-sm"
+      class="
+        hidden
+        lg:inline-block
+        bg-meeow-light
+        px-5
+        h-7
+        rounded-tl-lg rounded-br-lg
+        mr-5
+        text-sm
+      "
     >
       <img
         src="../../assets/imgs/buddie-blue.png"
@@ -45,12 +60,13 @@
     </button>
     <button
       class="
+        hidden
         bg-meeow-light
         rounded-tl-lg rounded-br-lg
         h-7
         mr-5
         text-sm
-        flex
+        lg:flex
         items-center
         pr-5
       "
