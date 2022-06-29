@@ -8,7 +8,6 @@
 import FullCalendar from "@fullcalendar/vue3";
 import interactionPlugin from "@fullcalendar/interaction";
 import timeGridPlugin from "@fullcalendar/timegrid";
-import moment from "moment";
 import EventData from "./EventData";
 
 export default {
