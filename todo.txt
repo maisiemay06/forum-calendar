@@ -1,0 +1,12 @@
+Calendar
+- Book buddies
+- Hover prev events
+- shade previous slots for current day
+- hover slots add event btns 
+
+Nav
+- help boxes behind calendar. 
+	Fixed when calendar z-index set to -z-10 but then can't scroll calendar
+
+Mobile
+- calendar layout

@@ -1,15 +1,6 @@
 <template>
   <div
-    class="
-      hidden
-      md:block
-      px-20
-      h-full
-      w-full
-      calendar-container
-      -z-10
-      relative
-    "
+    class="hidden md:block px-20 h-full w-full calendar-container -z-0 relative"
   >
     <FullCalendar :options="options" class="w-full" />
   </div>
@@ -20,6 +11,7 @@ import FullCalendar from "@fullcalendar/vue3";
 import interactionPlugin from "@fullcalendar/interaction";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import EventData from "./EventData";
+import moment from "moment";
 
 export default {
   name: "CalendarGrid",
@@ -45,6 +37,9 @@ export default {
         expandRows: true,
         height: "72vh",
         dayHeaderFormat: { weekday: "short", day: "numeric" },
+        dayHeaderContent: (args) => {
+          return moment(args.date).format("ddd Do");
+        },
         slotLabelFormat: {
           hour: "numeric",
           meridiem: "lowercase",
@@ -79,6 +74,7 @@ thead,
 th {
   border-top: 0px !important;
   height: 30px !important;
+  font-weight: 400;
 }
 
 table tr:last-child td {
