@@ -9,6 +9,7 @@ import FullCalendar from "@fullcalendar/vue3";
 import interactionPlugin from "@fullcalendar/interaction";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import moment from "moment";
+import EventData from "./EventData";
 
 export default {
   name: "CalendarGrid",
@@ -18,6 +19,7 @@ export default {
   data() {
     return {
       options: {
+        events: EventData,
         themeSystem: "standard",
         plugins: [timeGridPlugin, interactionPlugin],
         scrollTime: "09:00:00",
@@ -31,7 +33,7 @@ export default {
         allDaySlot: false,
         firstDay: 0,
         expandRows: true,
-        height: 800,
+        height: "70vh",
         dayHeaderFormat: { weekday: "short", day: "numeric" },
         slotLabelFormat: {
           hour: "numeric",
@@ -39,10 +41,18 @@ export default {
           hour12: true,
         },
         nowIndicator: true,
+        eventBackgroundColor: "#fff",
+        eventTextColor: "#000",
+        eventTimeFormat: {
+          hour: "numeric",
+          minute: "2-digit",
+          meridiem: "lowercase",
+          omitZeroMinute: true,
+        },
+        displayEventEnd: false,
       },
     };
   },
-  methods: {},
 };
 </script>
 
@@ -108,5 +118,38 @@ table tr td:last-child {
 
 .fc-col-header-cell {
   background-color: transparent !important;
+}
+
+.fc-timegrid-event {
+  border-radius: 4px 0 4px 0 !important;
+  font-size: 12px !important;
+}
+.fc-event-time {
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  margin-top: 3px;
+}
+.fc-v-event .fc-event-main-frame {
+  flex-direction: column-reverse !important;
+  justify-content: start;
+  padding-left: 15px !important;
+  position: relative;
+  top: -100%;
+}
+.fc-v-event .fc-event-title-container {
+  flex-grow: 0 !important;
+  flex-shrink: 0 !important;
+}
+.fc-event-main::before {
+  content: "";
+  height: 102%;
+  background-color: #394ced;
+  border-color: #394ced;
+  border-radius: 4px 0 4px 0;
+  width: 10px !important;
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  left: -1px;
 }
 </style>
