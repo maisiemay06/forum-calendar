@@ -1,14 +1,17 @@
 <template>
   <nav-bar></nav-bar>
+  <calendar-grid></calendar-grid>
 </template>
 
 <script>
-import NavBar from "./components/NavBar.vue";
+import NavBar from "./components/NavBar/NavBar.vue";
+import CalendarGrid from "./components/CalendarGrid.vue";
 
 export default {
   name: "App",
   components: {
     NavBar,
+    CalendarGrid,
   },
 };
 </script>
