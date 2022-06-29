@@ -1,5 +1,5 @@
 <template>
-  <nav class="z-100 navbar">
+  <nav class="z-40 navbar">
     <main-nav :openModal="openModal"></main-nav>
     <search-bar></search-bar>
     <timer-bar :openModal="openModal"></timer-bar>

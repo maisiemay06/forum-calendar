@@ -38,51 +38,178 @@
       Today
     </button>
 
-    <!-- Desktop Help Btns -->
-    <button
-      class="
-        hidden
-        lg:inline-block
-        bg-meeow-light
-        px-5
-        h-7
-        rounded-tl-lg rounded-br-lg
-        mr-5
-        text-sm
-      "
-    >
-      <img
-        src="../../assets/imgs/buddie-blue.png"
-        alt="blue book buddie"
-        class="inline mr-1"
-      />
-      What do these mean?
-    </button>
-    <button
-      class="
-        hidden
-        bg-meeow-light
-        rounded-tl-lg rounded-br-lg
-        h-7
-        mr-5
-        text-sm
-        lg:flex
-        items-center
-        pr-5
-      "
-    >
+    <!-- Desktop Book Buddies Help Btn & Modal -->
+    <div>
+      <button
+        class="
+          hidden
+          lg:inline-block
+          bg-[#FAFAFA]
+          px-5
+          h-7
+          rounded-tl-lg rounded-br-lg
+          mr-5
+          text-sm
+          hover:bg-[#F4F4F4]
+        "
+        @click="
+          showIndicatorHelp = !showIndicatorHelp;
+          showColourCodeHelp = false;
+        "
+      >
+        <img
+          src="../../assets/imgs/buddie-blue.png"
+          alt="blue book buddie"
+          class="inline mr-1"
+        />
+        What do these mean?
+      </button>
+
       <div
         class="
-          bg-meeow-primary
-          rounded-tl-lg rounded-br-lg
-          w-3
-          h-7
-          inline-block
-          mr-5
+          bg-white
+          drop-shadow-lg
+          border
+          rounded-tl-xl rounded-br-xl
+          text-black text-left text-sm
+          p-6
+          w-[296px]
+          absolute
+          top-[80%]
+          -ml-[3%]
+          z-50
         "
-      ></div>
-      Colour codes explained
-    </button>
+        v-if="showIndicatorHelp"
+        @click="showIndicatorHelp = false"
+      >
+        <p class="mb-3">
+          Booking indicators tell you how many members have already booked to
+          network in that hour.
+          <br />
+          There’s no limit to number of members that can network every hour.
+          Meeow will match you into rooms of up to 4.
+        </p>
+        <div>
+          <img
+            src="../../assets/imgs/buddie-clear.png"
+            alt=""
+            class="inline mr-3 mb-3 w-4"
+          />
+          <p class="inline">1 > 2 members have booked</p>
+        </div>
+        <div>
+          <img
+            src="../../assets/imgs/buddie-black.png"
+            alt=""
+            class="inline mr-3 mb-3 w-4"
+          />
+          <p class="inline">3 > 6 members have booked</p>
+        </div>
+        <div>
+          <img
+            src="../../assets/imgs/buddie-blue.png"
+            alt=""
+            class="inline mr-3 mb-3 w-4"
+          />
+          <p class="inline">7 > members have booked</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desktop Colour Codes Help Btn & Modal -->
+    <div>
+      <button
+        class="
+          hidden
+          bg-[#FAFAFA]
+          rounded-tl-lg rounded-br-lg
+          h-7
+          mr-5
+          text-sm
+          lg:flex
+          items-center
+          pr-5
+          hover:bg-[#F4F4F4]
+        "
+        @click="
+          showColourCodeHelp = !showColourCodeHelp;
+          showIndicatorHelp = false;
+        "
+      >
+        <div
+          class="
+            bg-meeow-primary
+            rounded-tl-lg rounded-br-lg
+            w-3
+            h-7
+            inline-block
+            mr-5
+          "
+        ></div>
+        Colour codes explained
+      </button>
+
+      <div
+        class="
+          bg-white
+          drop-shadow-lg
+          border
+          rounded-tl-xl rounded-br-xl
+          text-black text-left text-sm
+          p-6
+          w-[296px]
+          absolute
+          top-[80%]
+          -ml-[3%]
+          z-50
+        "
+        v-if="showColourCodeHelp"
+        @click="showColourCodeHelp = false"
+      >
+        <p class="mb-3">
+          These colour codes tell you what type of Meeow you're seeing.
+        </p>
+        <div class="flex items-center mb-3">
+          <div
+            class="
+              bg-meeow-primary
+              rounded-tl-lg rounded-br-lg
+              w-7
+              h-7
+              inline-block
+              mr-3
+            "
+          ></div>
+          <p class="inline">On-demand networking booking</p>
+        </div>
+        <div class="flex items-center mb-3">
+          <div
+            class="
+              bg-[#9231CE]
+              rounded-tl-lg rounded-br-lg
+              w-7
+              h-7
+              inline-block
+              mr-3
+            "
+          ></div>
+          <p class="inline">A Meeow you've booked</p>
+        </div>
+        <div class="flex items-center mb-3">
+          <div
+            class="
+              bg-[#00DCDC]
+              rounded-tl-lg rounded-br-lg
+              w-7
+              h-7
+              inline-block
+              mr-3
+            "
+          ></div>
+          <p class="inline">A Meeow you've created</p>
+        </div>
+      </div>
+    </div>
 
     <!-- Search -->
     <input
@@ -138,5 +265,11 @@
 <script>
 export default {
   name: "SearchBar",
+  data() {
+    return {
+      showIndicatorHelp: false,
+      showColourCodeHelp: false,
+    };
+  },
 };
 </script>

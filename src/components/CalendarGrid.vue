@@ -1,5 +1,16 @@
 <template>
-  <div class="hidden md:block px-20 h-full w-full calendar-container z-20">
+  <div
+    class="
+      hidden
+      md:block
+      px-20
+      h-full
+      w-full
+      calendar-container
+      -z-10
+      relative
+    "
+  >
     <FullCalendar :options="options" class="w-full" />
   </div>
 </template>

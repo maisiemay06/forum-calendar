@@ -1,6 +1,7 @@
 <template>
   <div
     class="
+      lg:hidden
       w-full
       h-[100vh]
       bg-black/80

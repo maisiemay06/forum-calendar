@@ -25,17 +25,52 @@
       <button class="inline-block lg:hidden text-[15px] rounded-full">
         Open on-demand networking
       </button>
-      <img
-        src="../../assets/imgs/info-bubble.png"
-        alt=""
-        class="hover:cursor-pointer"
-        @click="() => openModal('ondemand')"
-      />
-      <a
-        class="hidden lg:inline-block text-xs ml-2 hover:cursor-pointer"
-        @click="() => openModal('ondemand')"
-        >Tell me more about this?</a
+
+      <div
+        @click="
+          () => {
+            openModal('ondemand');
+            showOnDemandHelp = !showOnDemandHelp;
+          }
+        "
       >
+        <img
+          src="../../assets/imgs/info-bubble.png"
+          alt=""
+          class="hover:cursor-pointer inline"
+        />
+        <a class="hidden lg:inline-block text-xs ml-2 hover:cursor-pointer"
+          >Tell me more about this?</a
+        >
+
+        <div
+          class="
+            bg-white
+            drop-shadow-lg
+            border
+            rounded-tl-xl rounded-br-xl
+            text-black text-left text-sm
+            p-6
+            w-[296px]
+            absolute
+            top-[250px]
+            -ml-[3%]
+            z-50
+          "
+          v-if="showOnDemandHelp"
+          @click="showOnDemandHelp = false"
+        >
+          <p class>
+            AI matched, On-demand networking on Meeow allows you to network with
+            up to 3 new people on the hour, every hour for 45 mins.
+            <br />
+            Only 4 people in each meeting, to ensure good quality conversation.
+            <br />
+            No limit to the number of 4 person meetings at one time, so everyone
+            gets to network when they want to.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -44,5 +79,10 @@
 export default {
   name: "TimerBar",
   props: ["openModal"],
+  data() {
+    return {
+      showOnDemandHelp: false,
+    };
+  },
 };
 </script>
