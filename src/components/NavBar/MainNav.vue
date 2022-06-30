@@ -90,7 +90,11 @@
     </div>
     <!-- My Meeows -->
     <div class="hidden lg:inline-block mr-12 group">
-      <img src="../../assets/imgs/users-icon.png" alt="users icon" />
+      <img
+        src="../../assets/imgs/users-icon.png"
+        alt="users icon"
+        class="h-7"
+      />
       <span
         class="
           bg-black
@@ -101,7 +105,7 @@
           py-1
           text-xs
           absolute
-          top-14
+          top-15
           -ml-10
           group-hover:visible
         "
@@ -142,10 +146,10 @@
           text-xs
           absolute
           top-14
-          -ml-9
+          -ml-12
           group-hover:visible
         "
-        >Meeow</span
+        >Notifications</span
       >
     </div>
     <!-- Connections -->
@@ -153,6 +157,7 @@
       <img
         src="../../assets/imgs/connections-icon.png"
         alt="connections icon"
+        class="h-5"
       />
       <span
         class="
@@ -193,7 +198,11 @@
     </div>
     <!-- Messaging -->
     <div class="hidden lg:inline-block mr-12 group">
-      <img src="../../assets/imgs/message-icon.png" alt="message icon" />
+      <img
+        src="../../assets/imgs/message-icon.png"
+        alt="message icon"
+        class="h-5"
+      />
       <span
         class="
           bg-black
@@ -205,7 +214,7 @@
           text-xs
           absolute
           top-14
-          -ml-12
+          -ml-10
           group-hover:visible
         "
         >Messaging</span

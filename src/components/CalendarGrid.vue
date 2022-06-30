@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="hidden md:block px-20 h-full w-full calendar-container -z-0 relative"
-  >
+  <div class="hidden md:block px-20 h-full w-full relative">
     <FullCalendar :options="options" class="w-full" />
   </div>
 </template>
@@ -35,7 +33,7 @@ export default {
         allDaySlot: false,
         firstDay: 0,
         expandRows: true,
-        height: "72vh",
+        height: "75vh",
         dayHeaderFormat: { weekday: "short", day: "numeric" },
         dayHeaderContent: (args) => {
           return moment(args.date).format("ddd Do");
@@ -62,6 +60,7 @@ export default {
 </script>
 
 <style >
+/* Table Borders & Sizing */
 table {
   border: 0px !important;
   font-size: 15px !important;
@@ -76,7 +75,6 @@ th {
   height: 30px !important;
   font-weight: 400;
 }
-
 table tr:last-child td {
   border-bottom: 0px !important;
 }
@@ -89,21 +87,27 @@ thead th:last-child,
 table tr td:last-child {
   border-right: 0px !important;
 }
-
 .fc-timegrid-slot {
   padding-right: 10px !important;
 }
 
+/* Table Background Colors */
 .fc-day-today {
   background-color: transparent !important;
 }
+.fc-day-past {
+  background-color: #fafafa !important;
+}
+.fc-col-header-cell {
+  background-color: transparent !important;
+}
 
+/* Now Indicator */
 .fc-timegrid-now-indicator-line {
   border-color: #00dcdc !important;
   border-width: 1px !important;
   height: 1px;
 }
-
 .fc-timegrid-now-indicator-line::before {
   content: "";
   border-color: #00dcdc !important;
@@ -118,14 +122,7 @@ table tr td:last-child {
   display: none !important;
 }
 
-.fc-day-past {
-  background-color: #fafafa !important;
-}
-
-.fc-col-header-cell {
-  background-color: transparent !important;
-}
-
+/* Event Styling */
 .fc-timegrid-event {
   border-radius: 4px 0 4px 0 !important;
   font-size: 12px !important;
@@ -150,14 +147,14 @@ table tr td:last-child {
 }
 .fc-event-main::before {
   content: "";
-  height: 102%;
+  height: 105%;
   background-color: #394ced;
   border-color: #394ced;
   border-radius: 4px 0 4px 0;
   width: 10px !important;
   display: inline-block;
   position: relative;
-  top: -1px;
+  top: -2px;
   left: -2px;
 }
 .createdMeeow .fc-event-main::before {

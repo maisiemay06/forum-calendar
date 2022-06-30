@@ -6,9 +6,6 @@ export default [
     end: "2022-06-26T07:00:00",
     borderColor: "#9231CE",
     className: "bookedMeeow",
-    extendedProps: {
-      category: "bookedMeeow",
-    },
   },
   {
     id: 2,
@@ -17,9 +14,6 @@ export default [
     end: "2022-06-26T11:45:00",
     borderColor: "#394CED",
     className: "onDemandMeeow",
-    extendedProps: {
-      category: "onDemandMeeow",
-    },
   },
   {
     id: 3,
@@ -28,9 +22,6 @@ export default [
     end: "2022-06-26T14:30:00",
     borderColor: "#00DCDC",
     className: "createdMeeow",
-    extendedProps: {
-      category: "createdMeeow",
-    },
   },
   {
     id: 4,
@@ -39,9 +30,6 @@ export default [
     end: "2022-06-26T19:00:00",
     borderColor: "#00DCDC",
     className: "createdMeeow",
-    extendedProps: {
-      category: "createdMeeow",
-    },
   },
 
   {
@@ -51,9 +39,6 @@ export default [
     end: "2022-06-27T13:00:00",
     borderColor: "#9231CE",
     className: "bookedMeeow",
-    extendedProps: {
-      category: "bookedMeeow",
-    },
   },
   {
     id: 6,
@@ -62,9 +47,6 @@ export default [
     end: "2022-06-27T13:45:00",
     borderColor: "#394CED",
     className: "onDemandMeeow",
-    extendedProps: {
-      category: "onDemandMeeow",
-    },
   },
   {
     id: 7,
@@ -73,9 +55,6 @@ export default [
     end: "2022-06-27T16:45:00",
     borderColor: "#394CED",
     className: "onDemandMeeow",
-    extendedProps: {
-      category: "onDemandMeeow",
-    },
   },
   {
     id: 8,
@@ -84,9 +63,6 @@ export default [
     end: "2022-06-27T18:00:00",
     borderColor: "#00DCDC",
     className: "createdMeeow",
-    extendedProps: {
-      category: "createdMeeow",
-    },
   },
   {
     id: 9,
@@ -95,9 +71,6 @@ export default [
     end: "2022-06-28T12:00:00",
     borderColor: "#000",
     className: "suggestedMeeow",
-    extendedProps: {
-      category: "suggestedMeeow",
-    },
   },
   {
     id: 10,
@@ -106,9 +79,6 @@ export default [
     end: "2022-06-28T15:15:00",
     borderColor: "#00DCDC",
     className: "createdMeeow",
-    extendedProps: {
-      category: "createdMeeow",
-    },
   },
   {
     id: 11,
@@ -117,9 +87,6 @@ export default [
     end: "2022-06-29T12:45:00",
     borderColor: "#000",
     className: "suggestedMeeow",
-    extendedProps: {
-      category: "suggestedMeeow",
-    },
   },
   {
     id: 12,
@@ -128,9 +95,6 @@ export default [
     end: "2022-06-30T09:00:00",
     borderColor: "#9231CE",
     className: "bookedMeeow",
-    extendedProps: {
-      category: "bookedMeeow",
-    },
   },
   {
     id: 13,
@@ -139,9 +103,6 @@ export default [
     end: "2022-06-30T11:45:00",
     borderColor: "#394CED",
     className: "onDemandMeeow",
-    extendedProps: {
-      category: "onDemandMeeow",
-    },
   },
   {
     id: 14,
@@ -150,9 +111,6 @@ export default [
     end: "2022-06-30T14:30:00",
     borderColor: "#00DCDC",
     className: "createdMeeow",
-    extendedProps: {
-      category: "createdMeeow",
-    },
   },
   {
     id: 14,
@@ -161,9 +119,6 @@ export default [
     end: "2022-07-01T12:45:00",
     borderColor: "#000",
     className: "suggestedMeeow",
-    extendedProps: {
-      category: "suggestedMeeow",
-    },
   },
   {
     id: 15,
@@ -172,9 +127,6 @@ export default [
     end: "2022-07-01T11:00:00",
     borderColor: "#9231CE",
     className: "bookedMeeow",
-    extendedProps: {
-      category: "bookedMeeow",
-    },
   },
   {
     id: 16,
@@ -183,9 +135,6 @@ export default [
     end: "2022-07-01T11:45:00",
     borderColor: "#394CED",
     className: "onDemandMeeow",
-    extendedProps: {
-      category: "onDemandMeeow",
-    },
   },
   {
     id: 17,
@@ -194,8 +143,5 @@ export default [
     end: "2022-07-01T14:30:00",
     borderColor: "#00DCDC",
     className: "createdMeeow",
-    extendedProps: {
-      category: "createdMeeow",
-    },
   },
 ];

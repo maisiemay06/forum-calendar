@@ -800,6 +800,10 @@ video {
   display: table;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
 }
@@ -854,6 +858,14 @@ video {
 
 .h-\[50px\] {
   height: 50px;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-5 {
+  height: 1.25rem;
 }
 
 .w-full {
@@ -912,6 +924,14 @@ video {
 
 .flex-grow {
   flex-grow: 1;
+}
+
+.grid-cols-7 {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .items-end {
